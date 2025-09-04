@@ -41,7 +41,8 @@ Add `--verbose` to see extra details.
 │             │
 │  20         │
 └─────────────┘
-[bencuci@archlinux tenxdev]$ uv run main.py "When I run the calculator asking '3 + 7 * 2', it gives 20 which is incorrect, please fix it."
+[bencuci@archlinux tenxdev]$ uv run main.py 
+"When I run the calculator asking '3 + 7 * 2', gives 20 which is incorrect, please fix it."
 
  - Calling function: get_files_info
  - Calling function: get_file_content
@@ -49,7 +50,9 @@ Add `--verbose` to see extra details.
  - Calling function: write_file
 
 Final response:
-I have corrected the precedence of operators in `pkg/calculator.py`. Now, when the calculator evaluates the expression '3 + 7 * 2', it will perform the multiplication first (7 * 2 = 14) and then the addition (3 + 14 = 17), giving the correct result.
+I have corrected the precedence of operators in `pkg/calculator.py`. Now, when the 
+calculator evaluates the expression '3 + 7 * 2', it will perform the multiplication 
+first (7 * 2 = 14) and then the addition (3 + 14 = 17), giving the correct result.
 
 [bencuci@archlinux tenxdev]$ uv run calculator/main.py "3 + 7 * 2"
 ┌─────────────┐
