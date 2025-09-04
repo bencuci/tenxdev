@@ -25,7 +25,7 @@ It uses Google's Gemini AI to figure out what you want and do it.
 ## Usage
 
 ```bash
-python main.py "your request here"
+uv run main.py "your request here"
 ```
 
 Add `--verbose` to see extra details.
